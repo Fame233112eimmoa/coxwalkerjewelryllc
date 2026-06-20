@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Plant placeholder</title>
+  <desc id="desc">Editorial placeholder artwork for plant and refinery imagery.</desc>
+  <rect width="1600" height="1100" fill="#fbfaf8" />
+  <rect x="36" y="36" width="1528" height="1028" fill="none" stroke="#111111" stroke-opacity=".12" />
+  <path d="M310 760V380h220v160h180V320h245v250h185V450h150v310Z" fill="none" stroke="#c38a61" stroke-width="4" />
+  <path d="M520 380v-80m310 20v-95m335 225v-90" stroke="#111111" stroke-opacity=".18" stroke-width="4" stroke-linecap="round" />
+  <path d="M255 840h1090" stroke="#111111" stroke-opacity=".12" stroke-width="3" />
+  <text x="150" y="150" fill="#6b625d" font-family="Arial, sans-serif" font-size="28" letter-spacing="12">COX WALKER JEWELRY LLC</text>
+  <text x="150" y="905" fill="#111111" font-family="Georgia, serif" font-size="108">Processing &amp; Refinery</text>
+  <text x="150" y="980" fill="#6b625d" font-family="Arial, sans-serif" font-size="30" letter-spacing="8">INDUSTRIAL PLACEHOLDER</text>
+</svg>

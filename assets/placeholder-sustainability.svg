@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Sustainability placeholder</title>
+  <desc id="desc">Editorial placeholder artwork for sustainability and ESG imagery.</desc>
+  <rect width="1600" height="1100" fill="#fdfcf9" />
+  <rect x="36" y="36" width="1528" height="1028" fill="none" stroke="#111111" stroke-opacity=".12" />
+  <path d="M530 715c-58-230 66-410 297-470-25 175-126 365-297 470Z" fill="none" stroke="#c38a61" stroke-width="4" />
+  <path d="M915 690c-14-164 98-304 271-351-18 138-93 277-271 351Z" fill="none" stroke="#111111" stroke-opacity=".18" stroke-width="4" />
+  <path d="M635 720c166-110 315-265 424-428" fill="none" stroke="#111111" stroke-opacity=".18" stroke-width="4" stroke-linecap="round" />
+  <text x="150" y="150" fill="#6b625d" font-family="Arial, sans-serif" font-size="28" letter-spacing="12">COX WALKER JEWELRY LLC</text>
+  <text x="150" y="905" fill="#111111" font-family="Georgia, serif" font-size="108">Community &amp; Responsibility</text>
+  <text x="150" y="980" fill="#6b625d" font-family="Arial, sans-serif" font-size="30" letter-spacing="8">ESG PLACEHOLDER</text>
+</svg>

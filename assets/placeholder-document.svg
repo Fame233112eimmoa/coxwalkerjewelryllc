@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Document placeholder</title>
+  <desc id="desc">Editorial placeholder artwork for certifications and reports.</desc>
+  <rect width="1600" height="1100" fill="#fbfaf7" />
+  <rect x="36" y="36" width="1528" height="1028" fill="none" stroke="#111111" stroke-opacity=".12" />
+  <rect x="460" y="220" width="500" height="650" fill="none" stroke="#111111" stroke-opacity=".18" stroke-width="4" />
+  <rect x="620" y="310" width="500" height="650" fill="none" stroke="#c38a61" stroke-width="4" />
+  <path d="M560 420h280m-280 90h320m-280 90h250m160-160h160m-160 90h160m-160 90h160" stroke="#111111" stroke-opacity=".18" stroke-width="4" stroke-linecap="round" />
+  <text x="150" y="150" fill="#6b625d" font-family="Arial, sans-serif" font-size="28" letter-spacing="12">COX WALKER JEWELRY LLC</text>
+  <text x="150" y="905" fill="#111111" font-family="Georgia, serif" font-size="108">Certificates &amp; Reports</text>
+  <text x="150" y="980" fill="#6b625d" font-family="Arial, sans-serif" font-size="30" letter-spacing="8">DOCUMENT PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Map placeholder</title>
+  <desc id="desc">Editorial placeholder artwork for a contact map.</desc>
+  <rect width="1600" height="900" fill="#f5f2ed" />
+  <rect x="26" y="26" width="1548" height="848" fill="none" stroke="#111111" stroke-opacity=".12" />
+  <path d="M220 160v580m280-620v680m280-640v600m280-580v640m280-660v700M120 220h1360M120 420h1360M120 620h1360" fill="none" stroke="#111111" stroke-opacity=".1" stroke-width="3" />
+  <path d="M820 260c-102 0-185 76-185 179 0 139 185 311 185 311s185-172 185-311c0-103-83-179-185-179Zm0 250c-39 0-70-31-70-70s31-70 70-70 70 31 70 70-31 70-70 70Z" fill="none" stroke="#c38a61" stroke-width="5" />
+  <text x="120" y="110" fill="#6b625d" font-family="Arial, sans-serif" font-size="26" letter-spacing="11">COX WALKER JEWELRY LLC</text>
+  <text x="120" y="810" fill="#111111" font-family="Georgia, serif" font-size="92">Location Preview</text>
+  <text x="120" y="860" fill="#6b625d" font-family="Arial, sans-serif" font-size="28" letter-spacing="8">MAP PLACEHOLDER</text>
+</svg>

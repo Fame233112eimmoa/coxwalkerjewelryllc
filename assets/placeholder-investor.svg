@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Investor placeholder</title>
+  <desc id="desc">Editorial placeholder artwork for investor and business imagery.</desc>
+  <rect width="1600" height="1100" fill="#fdfcf9" />
+  <rect x="36" y="36" width="1528" height="1028" fill="none" stroke="#111111" stroke-opacity=".12" />
+  <path d="M330 810V470h160v340Zm270 0V370h160v440Zm270 0V560h160v250Zm270 0V290h160v520Z" fill="none" stroke="#111111" stroke-opacity=".18" stroke-width="4" />
+  <path d="M300 870h1050" stroke="#c38a61" stroke-width="4" stroke-linecap="round" />
+  <path d="M370 320 620 420l250-155 280 95 160-110" fill="none" stroke="#c38a61" stroke-width="4" stroke-linecap="round" />
+  <text x="150" y="150" fill="#6b625d" font-family="Arial, sans-serif" font-size="28" letter-spacing="12">COX WALKER JEWELRY LLC</text>
+  <text x="150" y="905" fill="#111111" font-family="Georgia, serif" font-size="108">Business &amp; Financial View</text>
+  <text x="150" y="980" fill="#6b625d" font-family="Arial, sans-serif" font-size="30" letter-spacing="8">INVESTOR PLACEHOLDER</text>
+</svg>
