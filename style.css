@@ -675,6 +675,14 @@ textarea {
   transition: transform 0.75s ease;
 }
 
+[data-page="leadership-team.html"] .leadership-portrait--kenneth {
+  object-position: center 18%;
+}
+
+[data-page="leadership-team.html"] .leadership-portrait--robert {
+  object-position: center 10%;
+}
+
 .card__body,
 .contact-card__body,
 .job-card,
