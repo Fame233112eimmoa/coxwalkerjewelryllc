@@ -3,6 +3,7 @@ const pages = [
   { title: "About Us", href: "about.html" },
   { title: "Our Story", href: "our-story.html" },
   { title: "Leadership Team", href: "leadership-team.html" },
+  { title: "Our Stores", href: "our-stores.html" },
   { title: "Our Mines", href: "our-mines.html" },
   { title: "Mining Operations", href: "mining-operations.html" },
   { title: "Exploration Projects", href: "exploration-projects.html" },
@@ -26,12 +27,13 @@ const pages = [
 ];
 
 const quickLinks = [
-  pages[1],
-  pages[4],
-  pages[12],
-  pages[20],
-  pages[22],
-  pages[23],
+  { title: "About Us", href: "about.html" },
+  { title: "Our Stores", href: "our-stores.html" },
+  { title: "Our Mines", href: "our-mines.html" },
+  { title: "Products", href: "products.html" },
+  { title: "Investors", href: "investors.html" },
+  { title: "Careers", href: "careers.html" },
+  { title: "Contact", href: "contact.html" },
 ];
 
 const resolveCurrentPage = () => {
