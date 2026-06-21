@@ -513,6 +513,15 @@ textarea {
   transition: transform 0.75s ease;
 }
 
+.card__image img.maria-portrait--card {
+  object-position: center 14%;
+}
+
+.media-frame img.maria-portrait--feature {
+  aspect-ratio: 4 / 5;
+  object-position: center 12%;
+}
+
 .media-frame:hover img,
 .card:hover .card__image img,
 .gallery-card:hover img,
