@@ -467,6 +467,31 @@ textarea {
   text-transform: uppercase;
 }
 
+.store-directory-section .container {
+  width: min(1240px, calc(100% - 2rem));
+}
+
+.store-directory-section .section-heading {
+  max-width: 920px;
+  margin-bottom: 3.5rem;
+}
+
+.store-grid {
+  gap: 1.7rem;
+}
+
+.store-grid .store-card {
+  min-height: 100%;
+}
+
+.store-grid .card__image img {
+  aspect-ratio: 5 / 4;
+}
+
+.store-grid .card__body {
+  padding: 1.55rem;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
