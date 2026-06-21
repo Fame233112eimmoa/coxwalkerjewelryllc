@@ -552,6 +552,26 @@ textarea {
   transition: transform 0.75s ease;
 }
 
+.story-media-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.story-portrait-card figcaption {
+  padding: 1rem 1.2rem 1.15rem;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.media-frame img.story-portrait--kenneth {
+  aspect-ratio: 4 / 5;
+  object-position: center 18%;
+}
+
 .card__image img.maria-portrait--card {
   object-position: center 14%;
 }
