@@ -31,9 +31,17 @@ const quickLinks = [
   { title: "Our Stores", href: "our-stores.html" },
   { title: "Our Mines", href: "our-mines.html" },
   { title: "Products", href: "products.html" },
+  { title: "FAQ", href: "faq.html" },
   { title: "Investors", href: "investors.html" },
   { title: "Careers", href: "careers.html" },
   { title: "Contact", href: "contact.html" },
+];
+
+const legalLinks = [
+  { title: "Privacy Policy", href: "privacy-policy.html" },
+  { title: "Terms & Conditions", href: "terms-conditions.html" },
+  { title: "Cookie Policy", href: "cookie-policy.html" },
+  { title: "FAQ", href: "faq.html" },
 ];
 
 const resolveCurrentPage = () => {
@@ -57,6 +65,10 @@ const navMarkup = pages
   .join("");
 
 const quickLinksMarkup = quickLinks
+  .map((page) => `<a href="${page.href}">${escapeHtml(page.title)}</a>`)
+  .join("");
+
+const legalLinksMarkup = legalLinks
   .map((page) => `<a href="${page.href}">${escapeHtml(page.title)}</a>`)
   .join("");
 
@@ -85,6 +97,7 @@ if (headerHost) {
           type="button"
           aria-expanded="false"
           aria-controls="site-menu"
+          aria-haspopup="dialog"
         >
           <span class="menu-toggle__label">Menu</span>
           <span class="menu-toggle__icon" aria-hidden="true">
@@ -102,7 +115,7 @@ if (menuHost) {
   menuHost.innerHTML = `
     <aside class="menu-panel" id="site-menu" hidden>
       <div class="menu-panel__backdrop" data-menu-close></div>
-      <div class="menu-panel__dialog" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="menu-panel__dialog" role="dialog" aria-modal="true" aria-label="Site navigation" tabindex="-1">
         <div class="menu-panel__header">
           <img
             class="menu-panel__logo"
@@ -142,17 +155,17 @@ if (footerHost) {
 
           <div>
             <p class="footer-title">Quick Links</p>
-            <div class="footer-links">
+            <nav class="footer-links" aria-label="Footer quick links">
               ${quickLinksMarkup}
-            </div>
+            </nav>
           </div>
 
           <div>
             <p class="footer-title">Contact</p>
             <div class="footer-links">
               <a href="mailto:info@coxwalkerjewelryllc.com">info@coxwalkerjewelryllc.com</a>
-              <a href="tel:+10000000000">+1 (000) 000-0000</a>
-              <span>New York, United States</span>
+              <a href="tel:+14165550184">+1 (416) 555-0184</a>
+              <span>Toronto Flagship &amp; North America Enquiries</span>
             </div>
           </div>
 
@@ -168,7 +181,9 @@ if (footerHost) {
 
         <div class="footer-bottom">
           <span>&copy; <span data-year></span> Cox Walker Jewelry LLC.</span>
-          <span>Designed as a clean multi-page editorial experience.</span>
+          <nav class="legal-links" aria-label="Legal">
+            ${legalLinksMarkup}
+          </nav>
         </div>
       </div>
     </footer>
@@ -189,9 +204,11 @@ if (!document.querySelector(".back-to-top")) {
 const body = document.body;
 const menuPanel = document.getElementById("site-menu");
 const menuToggle = document.querySelector(".menu-toggle");
+const menuDialog = menuPanel?.querySelector(".menu-panel__dialog");
 const menuCloseTriggers = document.querySelectorAll("[data-menu-close]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const backToTopButton = document.querySelector(".back-to-top");
+let lastFocusedElement = null;
 
 const normalizeHref = (href) => href.replace("./", "") || "index.html";
 
@@ -199,6 +216,12 @@ const setActiveLink = () => {
   navLinks.forEach((link) => {
     const isActive = normalizeHref(link.getAttribute("href")) === currentPage;
     link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+      return;
+    }
+
+    link.removeAttribute("aria-current");
   });
 };
 
@@ -207,9 +230,11 @@ const openMenu = () => {
     return;
   }
 
+  lastFocusedElement = document.activeElement;
   menuPanel.hidden = false;
   body.classList.add("menu-open");
   menuToggle.setAttribute("aria-expanded", "true");
+  menuDialog?.focus();
 };
 
 const closeMenu = () => {
@@ -220,6 +245,11 @@ const closeMenu = () => {
   menuPanel.hidden = true;
   body.classList.remove("menu-open");
   menuToggle.setAttribute("aria-expanded", "false");
+  if (lastFocusedElement instanceof HTMLElement) {
+    lastFocusedElement.focus();
+  } else {
+    menuToggle.focus();
+  }
 };
 
 if (menuToggle) {
