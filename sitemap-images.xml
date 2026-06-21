@@ -7,8 +7,8 @@
       <image:caption>Gemstone and mining hero image.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/maria-cox-walker-suit.png</image:loc>
-      <image:caption>Maria Cox Walker, chief executive officer of Cox Walker Jewelry LLC.</image:caption>
+      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/mavis-cox.jpg</image:loc>
+      <image:caption>Mavis Cox, family steward at Cox Walker Jewelry LLC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.coxwalkerjewelryllc.com/assets/card-images/about-home-r1c1.png</image:loc>
@@ -19,8 +19,8 @@
       <image:caption>Kenneth Cox Walker.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/maria-cox-walker-suit.png</image:loc>
-      <image:caption>Leadership team.</image:caption>
+      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/robert-cox.jpg</image:loc>
+      <image:caption>Robert Cox of Cox Walker Jewelry LLC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.coxwalkerjewelryllc.com/assets/card-images/business-r1c2.png</image:loc>
@@ -118,8 +118,8 @@
       <image:caption>About Cox Walker Jewelry LLC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/maria-cox-walker-suit.png</image:loc>
-      <image:caption>Maria Cox Walker, current chief executive officer.</image:caption>
+      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/mavis-cox.jpg</image:loc>
+      <image:caption>Mavis Cox of Cox Walker Jewelry LLC.</image:caption>
     </image:image>
   </url>
   <url>
@@ -395,20 +395,20 @@
       <image:caption>Leadership team at Cox Walker Jewelry LLC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/maria-cox-walker-suit.png</image:loc>
-      <image:caption>Maria Cox Walker portrait.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/kenneth-cox-walker-seated.jpg</image:loc>
-      <image:caption>Kenneth Cox Walker portrait.</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/robert-cox.jpg</image:loc>
       <image:caption>Robert Cox portrait.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/mavis-cox.jpg</image:loc>
       <image:caption>Mavis Cox portrait.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.coxwalkerjewelryllc.com/assets/card-images/leadership-r1c2.png</image:loc>
+      <image:caption>Daniel Hart portrait.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/kenneth-cox-walker-seated.jpg</image:loc>
+      <image:caption>Kenneth Cox Walker portrait.</image:caption>
     </image:image>
   </url>
   <url>
@@ -512,6 +512,10 @@
     <image:image>
       <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/kenneth-cox-walker-seated.jpg</image:loc>
       <image:caption>Kenneth Cox Walker seated and smiling.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.coxwalkerjewelryllc.com/assets/family/maria-cox-walker-suit.png</image:loc>
+      <image:caption>Maria Cox Walker, next of kin to Kenneth Cox Walker.</image:caption>
     </image:image>
   </url>
   <url>

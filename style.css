@@ -592,6 +592,11 @@ textarea {
   object-position: center 18%;
 }
 
+.media-frame img.story-portrait--maria {
+  aspect-ratio: 4 / 5;
+  object-position: center 12%;
+}
+
 .card__image img.maria-portrait--card {
   object-position: center 14%;
 }
@@ -599,6 +604,15 @@ textarea {
 .media-frame img.maria-portrait--feature {
   aspect-ratio: 4 / 5;
   object-position: center 12%;
+}
+
+.card__image img.leadership-portrait--robert-card {
+  object-position: center 10%;
+}
+
+.media-frame img.mavis-portrait--feature {
+  aspect-ratio: 4 / 5;
+  object-position: center 8%;
 }
 
 .media-frame:hover img,
@@ -825,6 +839,10 @@ textarea {
 
 [data-page="leadership-team.html"] .leadership-portrait--robert {
   object-position: center 10%;
+}
+
+[data-page="leadership-team.html"] .leadership-portrait--daniel {
+  object-position: center 20%;
 }
 
 .card__body,
