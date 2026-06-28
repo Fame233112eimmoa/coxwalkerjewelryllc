@@ -2,12 +2,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const siteUrl = "https://www.coxwalkerjewelryllc.com";
+const siteUrl = "https://coxwalkerjewelryllc.com";
 const companyName = "Cox Walker Jewelry LLC";
 const companyEmail = "info@coxwalkerjewelryllc.com";
 const companyPhone = "+1-416-555-0184";
-const today = new Date().toISOString().slice(0, 10);
-
 const noIndexPages = new Set(["404.html"]);
 const jewelryStorePages = new Set(["index.html", "contact.html", "our-stores.html"]);
 const productSchemaPages = new Set([
@@ -45,14 +43,6 @@ const stripTags = (value = "") =>
   decodeEntities(value.replace(/<[^>]+>/g, " "))
     .replace(/\s+/g, " ")
     .trim();
-
-const xmlEscape = (value = "") =>
-  value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&apos;");
 
 const pageUrl = (file) => (file === "index.html" ? `${siteUrl}/` : `${siteUrl}/${file}`);
 const assetUrl = (assetPath) => `${siteUrl}/${assetPath.replace(/^\.?\//, "")}`;
@@ -435,61 +425,6 @@ const buildSchemas = (file, html, title, description, hero, breadcrumbItems) => 
 
   return schemas;
 };
-
-const collectPageImages = (html) =>
-  [...html.matchAll(/<img[\s\S]*?src="([^"]+)"[\s\S]*?alt="([^"]*)"/g)].map(([, src, alt]) => ({
-    src,
-    alt: stripTags(alt),
-  }));
-
-const buildPageSitemap = (pages) => `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages
-  .map(
-    (page) => `  <url>
-    <loc>${xmlEscape(page.url)}</loc>
-    <lastmod>${today}</lastmod>
-  </url>`
-  )
-  .join("\n")}
-</urlset>
-`;
-
-const buildImageSitemap = (pages) => `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${pages
-  .map((page) => {
-    const images = page.images
-      .filter((image) => !image.src.startsWith("data:"))
-      .map(
-        (image) => `    <image:image>
-      <image:loc>${xmlEscape(assetUrl(image.src))}</image:loc>
-      <image:caption>${xmlEscape(image.alt || `${companyName} image`)}</image:caption>
-    </image:image>`
-      )
-      .join("\n");
-
-    return `  <url>
-    <loc>${xmlEscape(page.url)}</loc>
-${images}
-  </url>`;
-  })
-  .join("\n")}
-</urlset>
-`;
-
-const buildSitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${siteUrl}/sitemap-pages.xml</loc>
-    <lastmod>${today}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${siteUrl}/sitemap-images.xml</loc>
-    <lastmod>${today}</lastmod>
-  </sitemap>
-</sitemapindex>
-`;
 
 const buildManifest = () =>
   JSON.stringify(

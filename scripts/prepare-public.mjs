@@ -25,6 +25,7 @@ const shouldCopyFile = (fileName) => {
   return copyableExtensions.has(path.extname(fileName));
 };
 
+await fs.rm(publicDir, { force: true, recursive: true });
 await fs.mkdir(publicDir, { recursive: true });
 
 for (const directoryName of copyableDirectories) {
@@ -45,4 +46,3 @@ for (const entry of rootEntries) {
 }
 
 console.log("Prepared public/ for Next.js build.");
-
