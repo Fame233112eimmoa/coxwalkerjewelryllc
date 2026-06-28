@@ -532,8 +532,6 @@ const htmlFiles = (await fs.readdir(root))
     return a.localeCompare(b);
   });
 
-const sitemapPages = [];
-
 for (const file of htmlFiles) {
   const filePath = path.join(root, file);
   let html = await fs.readFile(filePath, "utf8");
@@ -571,19 +569,9 @@ for (const file of htmlFiles) {
 
   await fs.writeFile(filePath, html);
 
-  if (!noIndexPages.has(file)) {
-    sitemapPages.push({
-      file,
-      url: canonical,
-      images: collectPageImages(html),
-    });
-  }
 }
 
 await fs.writeFile(path.join(root, "site.webmanifest"), buildManifest());
 await fs.writeFile(path.join(root, "robots.txt"), buildRobots());
-await fs.writeFile(path.join(root, "sitemap-pages.xml"), buildPageSitemap(sitemapPages));
-await fs.writeFile(path.join(root, "sitemap-images.xml"), buildImageSitemap(sitemapPages));
-await fs.writeFile(path.join(root, "sitemap.xml"), buildSitemapIndex());
 
 console.log(`SEO build complete for ${htmlFiles.length} HTML files.`);
